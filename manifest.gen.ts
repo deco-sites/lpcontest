@@ -22,11 +22,11 @@ import * as $$$$$$10 from "./sections/Content/CallToAction.tsx";
 import * as $$$$$$11 from "./sections/Content/Faq.tsx";
 import * as $$$$$$12 from "./sections/Content/Features.tsx";
 import * as $$$$$$13 from "./sections/Content/Hero.tsx";
-import * as $$$$$$14 from "./sections/Content/ImageSection.tsx";
-import * as $$$$$$15 from "./sections/Content/Intro.tsx";
-import * as $$$$$$16 from "./sections/Content/Logos.tsx";
-import * as $$$$$$17 from "./sections/Content/Partners.tsx";
-import * as $$$$$$18 from "./sections/Content/RichText.tsx";
+import * as $$$$$$14 from "./sections/Content/HowItWorks.tsx";
+import * as $$$$$$15 from "./sections/Content/ImageSection.tsx";
+import * as $$$$$$16 from "./sections/Content/Intro.tsx";
+import * as $$$$$$17 from "./sections/Content/Logos.tsx";
+import * as $$$$$$18 from "./sections/Content/Partners.tsx";
 import * as $$$$$$19 from "./sections/Content/Table.tsx";
 import * as $$$$$$20 from "./sections/Content/Testimonials.tsx";
 import * as $$$$$$21 from "./sections/Content/TextWithImage.tsx";
@@ -85,11 +85,11 @@ const manifest = {
     "deco-sites/lpcontest/sections/Content/Faq.tsx": $$$$$$11,
     "deco-sites/lpcontest/sections/Content/Features.tsx": $$$$$$12,
     "deco-sites/lpcontest/sections/Content/Hero.tsx": $$$$$$13,
-    "deco-sites/lpcontest/sections/Content/ImageSection.tsx": $$$$$$14,
-    "deco-sites/lpcontest/sections/Content/Intro.tsx": $$$$$$15,
-    "deco-sites/lpcontest/sections/Content/Logos.tsx": $$$$$$16,
-    "deco-sites/lpcontest/sections/Content/Partners.tsx": $$$$$$17,
-    "deco-sites/lpcontest/sections/Content/RichText.tsx": $$$$$$18,
+    "deco-sites/lpcontest/sections/Content/HowItWorks.tsx": $$$$$$14,
+    "deco-sites/lpcontest/sections/Content/ImageSection.tsx": $$$$$$15,
+    "deco-sites/lpcontest/sections/Content/Intro.tsx": $$$$$$16,
+    "deco-sites/lpcontest/sections/Content/Logos.tsx": $$$$$$17,
+    "deco-sites/lpcontest/sections/Content/Partners.tsx": $$$$$$18,
     "deco-sites/lpcontest/sections/Content/Table.tsx": $$$$$$19,
     "deco-sites/lpcontest/sections/Content/Testimonials.tsx": $$$$$$20,
     "deco-sites/lpcontest/sections/Content/TextWithImage.tsx": $$$$$$21,
