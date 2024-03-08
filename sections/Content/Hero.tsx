@@ -33,7 +33,7 @@ export default function HeroFlats({
 }: Props) {
   return (
     <div>
-      <div class="mx-auto flex flex-col items-center gap-8">
+      <div class="mx-auto flex gap-8">
         <div
           class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
             image
@@ -41,17 +41,6 @@ export default function HeroFlats({
               : "flex-col items-center justify-center text-center"
           } lg:py-36 gap-12 md:gap-20 items-center`}
         >
-          {image && (
-            <Image
-              width={640}
-              class="w-full lg:w-1/2 object-fit"
-              sizes="(max-width: 640px) 100vw, 30vw"
-              src={image}
-              alt={image}
-              decoding="async"
-              loading="lazy"
-            />
-          )}
           <div
             class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
               image
@@ -91,6 +80,17 @@ export default function HeroFlats({
               ))}
             </div>
           </div>
+          {image && (
+            <Image
+              width={640}
+              class="w-full lg:w-1/2 object-fit rounded-xl"
+              sizes="(max-width: 640px) 100vw, 30vw"
+              src={image}
+              alt={image}
+              decoding="async"
+              loading="lazy"
+            />
+          )}
         </div>
       </div>
     </div>

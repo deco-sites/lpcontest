@@ -110,8 +110,7 @@ const manifest = {
     "deco-sites/lpcontest/sections/Miscellaneous/CookieConsent.tsx": $$$$$$36,
     "deco-sites/lpcontest/sections/Miscellaneous/Slide.tsx": $$$$$$37,
     "deco-sites/lpcontest/sections/Newsletter/Newsletter.tsx": $$$$$$38,
-    "deco-sites/lpcontest/sections/Product/ImageGalleryFrontBack.tsx":
-      $$$$$$39,
+    "deco-sites/lpcontest/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$39,
     "deco-sites/lpcontest/sections/Product/ImageGallerySlider.tsx": $$$$$$40,
     "deco-sites/lpcontest/sections/Product/NotFound.tsx": $$$$$$41,
     "deco-sites/lpcontest/sections/Product/NotFoundChallenge.tsx": $$$$$$42,

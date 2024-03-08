@@ -4,70 +4,49 @@ import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
  * @titleBy title
  */
 export interface Card {
-  icon?: AvailableIcons;
+  cardNumber?: string;
   /**
    * @format html
    */
-  title: string;
   text: string;
 }
 
 export interface Props {
+  /**
+   * @format html
+   */
   title?: string;
   cards: Card[];
 }
 
-function FeatureCard({ icon, title, text }: Card) {
+function FeatureCard({ cardNumber, text }: Card) {
   return (
-    <div class="feature-card group group-hover:-translate-y-3">
-      {icon && (
-        <div class="p-6 rounded-full bg-white text-[#1A1A1A]">
-          <Icon id={icon} size={48} />
+    <div class="feature-card bg-[#000D0D] rounded-3xl lg:h-[350px] group group-hover:-translate-y-3">
+      {cardNumber && (
+        <div class="p-6 rounded-full bg-[#113032]">
+          <div class="w-12 h-12 flex- items-center justify-center text-[#02F67C] text-[40px] font-semibold">
+            {cardNumber}
+          </div>
         </div>
       )}
       <div class="space-y-4 text-center">
-        {title && (
-          <div
-            class="text-2xl font-semibold leading-[110%]"
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-        )}
         <p class="leading-[120%]" dangerouslySetInnerHTML={{ __html: text }} />
       </div>
     </div>
   );
 }
 
-const DEFAULT_CARDS = [
-  {
-    "icon": "Discount" as AvailableIcons,
-    "text": ":)",
-    "title": "<p>Visit our coupon page!</p>",
-  },
-  {
-    "icon": "Discount" as AvailableIcons,
-    "text": ":)",
-    "title": "<p>Visit our coupon page!</p>",
-  },
-  {
-    "icon": "Discount" as AvailableIcons,
-    "text": ":)",
-    "title": "<p>Visit our coupon page!</p>",
-  },
-];
-
 export default function Features(
-  { title = "Feature", cards = DEFAULT_CARDS }: Props,
+  { title = "Feature", cards }: Props,
 ) {
   return (
-    <section class="relative bg-white text-black py-20 max-w-screen">
+    <section class="relative py-20 max-w-screen">
       <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-20">
-        {title && (
-          <h2 class="font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10">
-            {title}
-          </h2>
-        )}
-        <div class="features">
+        <h2
+          class="font-medium text-white text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10"
+          dangerouslySetInnerHTML={{ __html: title }}
+        />
+        <div class="flex items-center justify-center gap-6 relative max-w-[1280px] mx-auto">
           {cards?.map((card) => <FeatureCard {...card} />)}
         </div>
       </div>

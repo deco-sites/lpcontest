@@ -1,1 +1,1 @@
-export { default, loader } from "$store/components/header/Header.tsx";
+export { default } from "deco-sites/lpcontest/islands/LPC/Header.tsx";
