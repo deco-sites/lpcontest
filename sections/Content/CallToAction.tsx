@@ -6,7 +6,7 @@ export interface CTA {
 }
 
 export interface Props {
-	/**
+  /**
    * @format html
    */
   text: string;
@@ -17,7 +17,10 @@ export default function CallToAction({ text = "Call to Action", cta }: Props) {
   return (
     <div class="py-16 md:py-28">
       <section class="xl:container mx-auto flex flex-col items-center justify-center gap-8 mb-16 lg:mb-0 z-10">
-        <h2 class="mx-6 lg:mx-0 text-center text-[36px] md:text-[80px] leading-[100%] font-medium max-w-4xl z-10" dangerouslySetInnerHTML={{ __html: text }} />
+        <h2
+          class="mx-6 lg:mx-0 text-center text-[36px] md:text-[80px] leading-[100%] font-medium max-w-4xl z-10"
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
         <div class="flex flex-col md:flex-row gap-4 z-20">
           {cta?.map((item) => (
             <a
