@@ -67,7 +67,7 @@ export default function HowItWorks(
             <a
               href="https://discord.com/channels/985687648595243068/1215655908630208512"
               target="_blank"
-              className="px-8 py-3 absolute bottom-[56px] bg-[#02F67C] rounded-full justify-start items-center gap-2 inline-flex"
+              className="px-8 py-3 absolute bottom-[64px] bg-[#02F67C] rounded-full justify-start items-center gap-2 inline-flex"
             >
               <span className="text-black text-xl font-medium font-['Albert Sans']">
                 Enroll now on Landing Page Contest

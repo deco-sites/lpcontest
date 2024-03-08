@@ -7,6 +7,17 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1124px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
+      fontFamily: {
+        sans: "Albert Sans, sans-serif",
+        serif: "serif",
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },

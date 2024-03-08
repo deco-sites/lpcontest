@@ -19,7 +19,7 @@ export interface Props {
 
 function FeatureCard({ cardNumber, text }: Card) {
   return (
-    <div class="feature-card bg-[#000D0D] rounded-3xl h-[350px] flex justify-center items-center">
+    <div class="feature-card [&>*:first-child]:bg-[#081A1A] bg-[#000D0D] rounded-3xl h-[350px] flex justify-center items-center">
       {cardNumber && (
         <div class="p-6 rounded-full bg-[#113032] flex items-center justify-center">
           <div class="w-12 h-12 flex items-center justify-center text-[#02F67C] text-[40px] font-semibold">
