@@ -44,7 +44,7 @@ export default function Features(
           class="font-medium text-white text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10"
           dangerouslySetInnerHTML={{ __html: title }}
         />
-        <div class="flex items-center justify-center gap-6 relative max-w-[1280px] mx-auto">
+        <div class="flex items-center justify-center flex-wrap gap-6 relative max-w-[1280px] mx-auto">
           {cards?.map((card) => <FeatureCard {...card} />)}
         </div>
       </div>

@@ -286,8 +286,8 @@ export default function Header(props: Props) {
             </li>
           </ul>
         </div>
-        <ul class="ml-auto hidden lg:flex lg:flex-row lg:gap-4 pr-8">
-          <li>
+        <ul class="ml-auto hidden lg:flex lg:items-center lg:flex-row lg:gap-4 pr-8">
+          <li class="text-nowrap">
             <a
               href={props.demo?.url}
               class="block whitespace-nowrap md:hover:border-[#02F67C] md:hover:border text-white border-[transparent] border font-normal text-[16px] hover:text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -295,7 +295,7 @@ export default function Header(props: Props) {
               {props.demo?.label}
             </a>
           </li>
-          <li>
+          <li class="text-nowrap">
             <a
               href={props.login.url}
               class="block text-white bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-normal text-[16px] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -303,7 +303,7 @@ export default function Header(props: Props) {
               {props.login.label}
             </a>
           </li>
-          <li>
+          <li class="text-nowrap">
             <a
               href={props.sign.url}
               class="block hover:bg-transparent md:hover:border md:hover:text-[#fff] border-[#02F67C] border bg-[#02F67C] font-normal text-[16px] text-[#0A2121] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
