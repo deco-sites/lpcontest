@@ -14,16 +14,15 @@ export default function HowItWorks(
 ) {
   return (
     <section class="relative py-20 max-w-screen">
-      <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-20">
+      <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-16">
         <h2
-          class="font-medium text-white text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10"
+          class="font-medium text-white text-[36px] lg:text-[72px] text-center"
           dangerouslySetInnerHTML={{ __html: title }}
         />
 
-        {/* Enroll Card */}
-        <div className="max-w-[1280px] h-[625px] flex justify-center items-center gap-16">
-          <div className="relative p-16 bg-[#000D0D] rounded-3xl flex-col justify-start items-center gap-6 flex">
-            <h3 className="text-white text-[40px] font-semibold font-['Albert Sans'] leading-4">
+        <div className="flex justify-center items-center gap-16">
+          <div className="p-8 lg:p-16 bg-[#000D0D] rounded-3xl flex-col justify-start items-center gap-6 flex">
+            <h3 className="text-white text-[40px] font-semibold font-['Albert Sans']">
               {subTitle}
             </h3>
             <div className="divider" />
@@ -33,7 +32,7 @@ export default function HowItWorks(
             <a
               href="https://discord.com/channels/985687648595243068/1215655908630208512"
               target="_blank"
-              className="px-8 py-3 absolute bottom-[-28px] bg-[#02F67C] rounded-full justify-start items-center gap-2 inline-flex"
+              className="px-8 py-3 absolute bottom-[-52px] md:bottom-[-28px] lg:bottom-[52px] bg-[#02F67C] rounded-full justify-start items-center gap-2 inline-flex"
             >
               <span className="text-black text-xl font-medium font-['Albert Sans']">
                 Enroll now on Landing Page Contest
@@ -41,7 +40,6 @@ export default function HowItWorks(
             </a>
           </div>
         </div>
-        {/* Enroll Card Final */}
       </div>
     </section>
   );
